@@ -5,11 +5,11 @@ import java.util.List;
 
 public class Student {
 
-private int id;
-private String name;
-private double gpa;
-List<String> activities;
-
+    private int id;
+    private String name;
+    private double gpa;
+    List<String> activities;
+    private int noOfNoteBooks;
 
     public Student(int id, String name, double gpa, List<String> activities) {
         this.id = id;
@@ -18,6 +18,21 @@ List<String> activities;
         this.activities = activities;
     }
 
+    public Student(int id, String name, double gpa, List<String> activities, int noOfNoteBooks) {
+        this.id = id;
+        this.name = name;
+        this.gpa = gpa;
+        this.activities = activities;
+        this.noOfNoteBooks = noOfNoteBooks;
+    }
+
+    public int getNoOfNoteBooks() {
+        return noOfNoteBooks;
+    }
+
+    public void setNoOfNoteBooks(int noOfNoteBooks) {
+        this.noOfNoteBooks = noOfNoteBooks;
+    }
 
     public int getId() {
         return id;
